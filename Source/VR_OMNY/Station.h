@@ -1,26 +1,39 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Gate.h"
 #include "Station.generated.h"
 
+// Base class — subclass per real station name.
 UCLASS()
 class VR_OMNY_API AStation : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
+
+public:
 	AStation();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Station")
+	FString StationName;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	// Populated in Blueprint by dragging gate actors into this array.
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Station")
+	TArray<AGate *> Gates;
 
+	// Returns the gate at Index, or nullptr with a logged warning if out of range.
+	UFUNCTION(BlueprintCallable, Category = "Station")
+	AGate *GetGate(int32 Index) const;
+
+	UFUNCTION(BlueprintPure, Category = "Station")
+	int32 GateCount() const { return Gates.Num(); }
+};
+
+// Concrete subclass — add more as needed.
+UCLASS()
+class VR_OMNY_API ATimes42ndStation : public AStation
+{
+	GENERATED_BODY()
+public:
+	ATimes42ndStation();
 };

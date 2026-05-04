@@ -11,14 +11,14 @@ class UInputComponent;
 class USkeletalMeshComponent;
 class UCameraComponent;
 class UInputAction;
+class UOMNYCardComponent;
+class AKiosk;
+class AGate;
 struct FInputActionValue;
 
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
-/**
- *  A basic first person character
- */
-UCLASS(abstract)
+UCLASS()
 class AVR_OMNYCharacter : public ACharacter
 {
 	GENERATED_BODY()
@@ -48,9 +48,29 @@ protected:
 	/** Mouse Look Input Action */
 	UPROPERTY(EditAnywhere, Category ="Input")
 	class UInputAction* MouseLookAction;
+
+	
 	
 public:
 	AVR_OMNYCharacter();
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="OMNY")
+	UOMNYCardComponent* OMNYCard;
+
+	UPROPERTY(BlueprintReadWrite, Category="OMNY")
+	bool bNearGate = false;
+
+	UPROPERTY(BlueprintReadWrite, Category="OMNY")
+	bool bNearKiosk = false;
+
+	UPROPERTY(BlueprintReadWrite, Category="OMNY")
+	TObjectPtr<AKiosk> NearbyKiosk;
+
+	UPROPERTY(BlueprintReadWrite, Category="OMNY")
+	TObjectPtr<AGate> NearbyGate;
+
+	UFUNCTION(BlueprintCallable, Category="OMNY")
+	bool TapCardAtGate(float Fare);
 
 protected:
 
@@ -75,6 +95,8 @@ protected:
 	/** Handles jump end inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category="Input")
 	virtual void DoJumpEnd();
+
+	virtual void BeginPlay() override;
 
 protected:
 

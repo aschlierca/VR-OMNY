@@ -1,27 +1,27 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "Station.h"
+#include "OMNYExceptions.h"
 
-// Sets default values
 AStation::AStation()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
+    StationName = TEXT("Unnamed Station");
 }
 
-// Called when the game starts or when spawned
-void AStation::BeginPlay()
+AGate* AStation::GetGate(int32 Index) const
 {
-	Super::BeginPlay();
-	
+    try
+    {
+        if (!Gates.IsValidIndex(Index))
+            throw OutOfRangeInputException(TCHAR_TO_UTF8(*FString::Printf(TEXT("Gate index %d"), Index)));
+        return Gates[Index];
+    }
+    catch (const OutOfRangeInputException& e)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("AStation::GetGate — %s"), UTF8_TO_TCHAR(e.what()));
+        return nullptr;
+    }
 }
 
-// Called every frame
-void AStation::Tick(float DeltaTime)
+ATimes42ndStation::ATimes42ndStation()
 {
-	Super::Tick(DeltaTime);
-
+    StationName = TEXT("Times Sq - 42 St");
 }
-

@@ -1,17 +1,23 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "VR_OMNYCharacter.h"
+#include "OMNYCardComponent.h"
 #include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "EnhancedInputComponent.h"
+#include "EnhancedInputSubsystems.h"
+#include "GameFramework/PlayerController.h"
 #include "InputActionValue.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "VR_OMNY.h"
 
 AVR_OMNYCharacter::AVR_OMNYCharacter()
 {
+	OMNYCard = CreateDefaultSubobject<UOMNYCardComponent>(TEXT("OMNYCard"));
+	OMNYCard->InitCard(TEXT("Player"), 20.f);
+
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(55.f, 96.0f);
 	
@@ -42,6 +48,11 @@ AVR_OMNYCharacter::AVR_OMNYCharacter()
 	// Configure character movement
 	GetCharacterMovement()->BrakingDecelerationFalling = 1500.0f;
 	GetCharacterMovement()->AirControl = 0.5f;
+}
+
+void AVR_OMNYCharacter::BeginPlay()
+{
+	Super::BeginPlay();
 }
 
 void AVR_OMNYCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -99,12 +110,18 @@ void AVR_OMNYCharacter::DoAim(float Yaw, float Pitch)
 
 void AVR_OMNYCharacter::DoMove(float Right, float Forward)
 {
-	if (GetController())
-	{
-		// pass the move inputs
-		AddMovementInput(GetActorRightVector(), Right);
-		AddMovementInput(GetActorForwardVector(), Forward);
-	}
+	if (!Controller) return;
+
+	FRotator ControlRot = Controller->GetControlRotation();
+
+	// Ignore pitch for movement
+	FRotator YawRotation(0.f, ControlRot.Yaw, 0.f);
+
+	const FVector ForwardVector = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+	const FVector RightVector   = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+
+	AddMovementInput(ForwardVector, Forward);
+	AddMovementInput(RightVector, Right);
 }
 
 void AVR_OMNYCharacter::DoJumpStart()
@@ -117,4 +134,11 @@ void AVR_OMNYCharacter::DoJumpEnd()
 {
 	// pass StopJumping to the character
 	StopJumping();
+}
+
+bool AVR_OMNYCharacter::TapCardAtGate(float Fare)
+{
+	if (!OMNYCard)
+		return false;
+	return OMNYCard->Deduct(Fare);
 }

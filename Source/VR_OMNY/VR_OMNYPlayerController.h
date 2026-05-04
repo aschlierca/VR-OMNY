@@ -1,57 +1,57 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
-
 #pragma once
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "InputAction.h"
 #include "VR_OMNYPlayerController.generated.h"
 
 class UInputMappingContext;
 class UUserWidget;
+class AKiosk;
 
-/**
- *  Simple first person Player Controller
- *  Manages the input mapping context.
- *  Overrides the Player Camera Manager class.
- */
-UCLASS(abstract, config="Game")
+UCLASS()
 class VR_OMNY_API AVR_OMNYPlayerController : public APlayerController
 {
 	GENERATED_BODY()
-	
+
 public:
 
-	/** Constructor */
 	AVR_OMNYPlayerController();
+
+	UPROPERTY(BlueprintReadWrite, Category="OMNY")
+	TObjectPtr<AKiosk> NearbyKiosk;
 
 protected:
 
-	/** Input Mapping Contexts */
-	UPROPERTY(EditAnywhere, Category="Input|Input Mappings")
+	virtual void BeginPlay() override;
+
+	virtual void OnPossess(APawn* Pawn) override;
+
+	virtual void SetupInputComponent() override;
+
+	UPROPERTY(EditAnywhere, Category="Input")
+	UInputAction* IA_Interact;
+
+	/** Mapping contexts applied at runtime */
+	UPROPERTY(EditAnywhere, Category="Input")
 	TArray<UInputMappingContext*> DefaultMappingContexts;
 
-	/** Input Mapping Contexts */
-	UPROPERTY(EditAnywhere, Category="Input|Input Mappings")
+	/** Mapping contexts excluded when using touch controls */
+	UPROPERTY(EditAnywhere, Category="Input")
 	TArray<UInputMappingContext*> MobileExcludedMappingContexts;
 
-	/** Mobile controls widget to spawn */
-	UPROPERTY(EditAnywhere, Category="Input|Touch Controls")
+	/** Mobile controls widget */
+	UPROPERTY(EditAnywhere, Category="Input|Touch")
 	TSubclassOf<UUserWidget> MobileControlsWidgetClass;
 
-	/** Pointer to the mobile controls widget */
 	UPROPERTY()
 	TObjectPtr<UUserWidget> MobileControlsWidget;
 
-	/** If true, the player will use UMG touch controls even if not playing on mobile platforms */
-	UPROPERTY(EditAnywhere, Config, Category = "Input|Touch Controls")
+	/** Force touch controls regardless of platform */
+	UPROPERTY(EditAnywhere, Category="Input|Touch")
 	bool bForceTouchControls = false;
 
-	/** Gameplay initialization */
-	virtual void BeginPlay() override;
+	void HandleInteract();
 
-	/** Input mapping context setup */
-	virtual void SetupInputComponent() override;
-
-	/** Returns true if the player should use UMG touch controls */
 	bool ShouldUseTouchControls() const;
 };

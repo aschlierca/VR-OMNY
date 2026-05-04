@@ -1,15 +1,21 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
 
-/**
- * 
- */
-class VR_OMNY_API TransactionLog
+struct FTransactionEntry
+{
+	FString Type; // "AddFunds" | "Fare" | "Purchase"
+	float Amount;
+	float BalanceAfter;
+	FString Timestamp;
+};
+
+class VR_OMNY_API FTransactionLog
 {
 public:
-	TransactionLog();
-	~TransactionLog();
+	void Record(const FString &Type, float Amount, float BalanceAfter);
+	void PrintAll() const;
+	const TArray<FTransactionEntry> &GetEntries() const { return Entries; }
+
+private:
+	TArray<FTransactionEntry> Entries;
 };

@@ -18,10 +18,10 @@ public class VR_OMNY : ModuleRules
 			"StateTreeModule",
 			"GameplayStateTreeModule",
 			"UMG",
-			"Slate"
-            "SlateCore"
+			"Slate",
+			"SlateCore"
 		});
-        bEnableExceptions = true;
+		bEnableExceptions = true;
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 

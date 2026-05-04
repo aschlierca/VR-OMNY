@@ -1,27 +1,48 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "Gate.h"
+#include "VR_OMNYCharacter.h"
+#include "Components/BoxComponent.h"
 
-// Sets default values
 AGate::AGate()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
+	TriggerBox = CreateDefaultSubobject<UBoxComponent>(TEXT("TriggerBox"));
+	RootComponent = TriggerBox;
+	TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &AGate::OnOverlapBegin);
+	TriggerBox->OnComponentEndOverlap.AddDynamic(this, &AGate::OnOverlapEnd);
 }
 
-// Called when the game starts or when spawned
 void AGate::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
-// Called every frame
-void AGate::Tick(float DeltaTime)
+void AGate::TryOpen(AVR_OMNYCharacter *Player)
 {
-	Super::Tick(DeltaTime);
+	if (!Player)
+		return;
 
+	bool bSuccess = Player->TapCardAtGate(2.90f);
+	bIsOpen = bSuccess;
+	OnGateTapped.Broadcast(bSuccess);
+	// Blueprint handles: green/red material flash, chime/buzz SFX, gate mesh animation.
 }
 
+void AGate::OnOverlapBegin(UPrimitiveComponent *, AActor *OtherActor,
+						   UPrimitiveComponent *, int32, bool, const FHitResult &)
+{
+	if (AVR_OMNYCharacter *Player = Cast<AVR_OMNYCharacter>(OtherActor))
+	{
+		Player->bNearGate  = true;
+		Player->NearbyGate = this;
+		// Show "Press F to tap card" HUD prompt from Blueprint.
+	}
+}
+
+void AGate::OnOverlapEnd(UPrimitiveComponent *, AActor *OtherActor,
+						 UPrimitiveComponent *, int32)
+{
+	if (AVR_OMNYCharacter *Player = Cast<AVR_OMNYCharacter>(OtherActor))
+	{
+		Player->bNearGate  = false;
+		Player->NearbyGate = nullptr;
+	}
+}

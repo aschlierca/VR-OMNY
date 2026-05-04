@@ -1,0 +1,498 @@
+[
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Gate.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Gate.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Kiosk.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Kiosk.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/KioskWidget.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/KioskWidget.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/OMNYCardComponent.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/OMNYCardComponent.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/OMNYExceptions.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/OMNYPlayerCharacter.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/OMNYPlayerCharacter.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Station.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Station.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/TransactionLog.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/TransactionLog.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNY.Build.cs",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNY.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNY.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNYCameraManager.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNYCameraManager.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNYCharacter.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNYCharacter.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNYGameMode.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNYGameMode.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNYPlayerController.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/VR_OMNYPlayerController.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Horror/HorrorCharacter.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Horror/HorrorCharacter.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Horror/HorrorGameMode.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Horror/HorrorGameMode.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Horror/HorrorPlayerController.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Horror/HorrorPlayerController.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Horror/UI/HorrorUI.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Horror/UI/HorrorUI.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/AI/EnvQueryContext_Target.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/AI/EnvQueryContext_Target.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/AI/ShooterAIController.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/AI/ShooterAIController.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/AI/ShooterNPC.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/AI/ShooterNPC.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/AI/ShooterNPCSpawner.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/AI/ShooterNPCSpawner.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/AI/ShooterStateTreeUtility.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/AI/ShooterStateTreeUtility.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/ShooterCharacter.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/ShooterCharacter.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/ShooterGameMode.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/ShooterGameMode.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/ShooterPlayerController.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/ShooterPlayerController.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/UI/ShooterBulletCounterUI.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/UI/ShooterBulletCounterUI.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/UI/ShooterUI.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/UI/ShooterUI.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/Weapons/ShooterPickup.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/Weapons/ShooterPickup.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/Weapons/ShooterProjectile.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/Weapons/ShooterProjectile.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/Weapons/ShooterWeapon.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/Weapons/ShooterWeapon.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/Weapons/ShooterWeaponHolder.cpp",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	},
+	{
+		"file": "/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/Source/VR_OMNY/Variant_Shooter/Weapons/ShooterWeaponHolder.h",
+		"arguments": [
+			"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"@/Users/seoyeoncho/Documents/Unreal Projects/VR_OMNY/.vscode/compileCommands_Default/VR_OMNY.1.rsp"
+		],
+		"directory": "/Users/Shared/Epic Games/UE_5.7/Engine/Source"
+	}
+]
