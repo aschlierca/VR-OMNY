@@ -35,7 +35,10 @@ void UKioskWidget::NativeConstruct()
 
 void UKioskWidget::GoToScreen(EKioskScreen Screen)
 {
+    UE_LOG(LogTemp, Warning, TEXT("GoToScreen: %d"), (int32)Screen);
+
     CurrentScreen = Screen;
+
     ApplyScreenTexture(Screen);
     RefreshButtonStates();
     OnScreenChanged(Screen);
@@ -48,8 +51,19 @@ void UKioskWidget::GoToScreen(EKioskScreen Screen)
 
 void UKioskWidget::ShowOnlyPanel(UPanelWidget* Active)
 {
-    if (WS_Screen && Active)
-        WS_Screen->SetActiveWidget(Active);
+    if (!WS_Screen)
+    {
+        UE_LOG(LogTemp, Error, TEXT("WS_Screen is NULL"));
+        return;
+    }
+
+    if (!Active)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("ShowOnlyPanel called with NULL panel"));
+        return;
+    }
+
+    WS_Screen->SetActiveWidget(Active);
 }
 
 // ── Button state management ───────────────────────────────────────────────────
@@ -68,7 +82,10 @@ void UKioskWidget::RefreshButtonStates()
 
     // Disable everything first — then selectively re-enable.
     for (UButton* B : All)
-        if (B) B->SetIsEnabled(false);
+        if (B){
+            B->SetIsEnabled(false);
+            B->SetVisibility(ESlateVisibility::Visible); // prevents disappearing confusion
+        }
 
     switch (CurrentScreen)
     {
@@ -134,9 +151,25 @@ void UKioskWidget::RefreshButtonStates()
 
 void UKioskWidget::ApplyScreenTexture(EKioskScreen Screen)
 {
-    if (!Img_Screen) return;
-    if (UTexture2D** Tex = ScreenTextures.Find(Screen))
+    if (!Img_Screen)
+    {
+        UE_LOG(LogTemp, Error, TEXT("Img_Screen is NULL"));
+        return;
+    }
+
+    UTexture2D* const* Tex = ScreenTextures.Find(Screen);
+
+    if (Tex && *Tex)
+    {
         Img_Screen->SetBrushFromTexture(*Tex, true);
+    }
+    else
+    {
+        UE_LOG(LogTemp, Error, TEXT("Missing ScreenTexture for screen enum: %d"), (int32)Screen);
+
+        // fallback so UI never looks broken
+        Img_Screen->SetBrushFromTexture(nullptr);
+    }
 }
 
 // ── Home ──────────────────────────────────────────────────────────────────────
