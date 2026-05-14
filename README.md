@@ -2,6 +2,13 @@
 
 Website: (https://sites.google.com/view/csc211h-seoyeoncho-sp26/home?authuser=0)
 
+## Set up
+1. Download and install from epicgames.com. Create a free Epic Games account. (https://store.epicgames.com/en-US)
+2. Download 5.7 Engine version and launch software
+3. Download from visualstudio.microsoft.com and during setup, check the **Game development with C++** workload. This installs the required build tools for UE
+4. Open VR_OMNY.uproject
+
+
 ## Inspiration
 New York City Metropolitan Transportation Authority released a new tap and pay system for public transportations using a new vending machine and OMNY card system. To provide a safe, low-pressure space for autistic individuals, this application helps user build transit confidence and independence before real-world application.
 
